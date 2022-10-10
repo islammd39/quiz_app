@@ -1,0 +1,8 @@
+.link-section a{
+     text-decoration: none;
+     margin-right: 20px;
+     color: #28120a;
+}
+.link-section a:hover{
+    border-bottom: 2px solid #ff0000;
+}
