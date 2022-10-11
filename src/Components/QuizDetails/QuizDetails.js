@@ -2,16 +2,21 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import { useNavigate } from 'react-router-dom';
 
 const QuizDetails = ({quiz}) => {
-    const {logo}=quiz
-    console.log(quiz);
+    const {id,logo}=quiz
+    // console.log(quiz.questions);
+    const navigate = useNavigate()
+    const clickHandle=()=>{
+        navigate(`/quiz/${id}`)
+    }
     return (
         <Col>
         <Card style={{ width: '18rem' }}>
-        <Card.Img className='bg-primary' variant="top" src={logo} />
+        <Card.Img className='bg-secondary' variant="top" src={logo} />
         <Card.Body>
-        <Button variant="primary">Go somewhere</Button>
+        <Button onClick={clickHandle} variant="primary">Go Quiz</Button>
         </Card.Body>
         </Card>
         </Col>

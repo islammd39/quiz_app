@@ -8,7 +8,7 @@ const Home = () => {
     const data = quizzes.data
     // console.log(quizzes.data);
     return (
-        <div>
+        <div className='mx-5'>
             <h1>Here is home section : {data.length}</h1>
             <Row xs={1} md={2} lg={4} className="g-2">
             {
