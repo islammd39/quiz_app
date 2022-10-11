@@ -5,6 +5,8 @@ import Main from './Leyout/Main/Main';
 import Error from './Leyout/Error/Error';
 import Home from './Components/Home/Home';
 import QuizTopics from './Components/QuizTopics/QuizTopics';
+import Static from './Components/Static/Static';
+import Blog from './Components/Blog/Blog';
 
 
 function App() {
@@ -23,8 +25,8 @@ function App() {
         },
         element:<QuizTopics></QuizTopics>
        },
-      {path:'/service', element:<div>service</div>},
-      {path:'/order', element:<div>order</div>}
+      {path:'/static', element:<Static></Static>},
+      {path:'/blog', element:<Blog></Blog>}
     ]},
     {path:'*', element:<Error></Error>}
   ])
