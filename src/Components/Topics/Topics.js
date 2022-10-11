@@ -1,13 +1,29 @@
 import React from 'react';
-import { Col} from 'react-bootstrap';
+import { Button, Col} from 'react-bootstrap';
 
 const Topics = ({quiz}) => {
-    console.log(quiz.options);
+    // console.log(quiz.correctAnswer);
+    const {question,correctAnswer}=quiz
+    const quizOptions = quiz.options
+    const handler=value=>{
+        if(value===correctAnswer){
+
+            console.log('click');
+        }else{
+            console.log('dont click');
+        }
+    }
 
     return (
-        <Col lg={12}>
-            <h3>{quiz.question}</h3>
+       <div>
+         <Col lg={12} className='my-5 py-5 bg-warning'>
+            <h5>{question}</h5>
+            <p>{quizOptions.option}</p>
         </Col>
+        {
+            quizOptions.map(option=> <p key={option}><Button onClick={()=>handler(option)}><input type="radio" name="avc"/>{option}</Button></p>)
+        }
+       </div>
     );
 };
 

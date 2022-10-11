@@ -6,12 +6,12 @@ import Topics from '../Topics/Topics';
 const QuizTopics = () => {
     const quizTopic = useLoaderData()
     const quizzes = quizTopic.data.questions
-    // console.log(quizTopic);
+    // console.log(quizTopic.data.questions);
     return (
         <div>
-            <h4>This quiz to : {quizTopic.data.questions.length}</h4>
+            <h4>Topic on quiz : {quizTopic.data.questions.length}</h4>
        <Container>
-       <Row>
+       <Row className='m-5'>
            { 
                 quizzes.map(quiz=> <Topics key={quiz.id} quiz={quiz}></Topics>)
             }
