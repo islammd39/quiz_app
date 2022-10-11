@@ -18,8 +18,8 @@ function Header() {
           <Nav className="ms-auto">
            <div className='link-section'>
            <Link to='/home'>Home</Link>
-            <Link to='/service'>service</Link>
-            <Link to='/order'>order</Link>
+            <Link to='/static'>Static</Link>
+            <Link to='/blog'>Blog</Link>
            </div>
           </Nav>
         </Navbar.Collapse>

@@ -6,3 +6,6 @@
 .link-section a:hover{
     border-bottom: 2px solid #ff0000;
 }
+.ic{
+    cursor: pointer;
+}
