@@ -1,0 +1,26 @@
+.front img{
+    height: 250px;
+    width: 250px;
+}
+.front{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+}
+.front p{
+    text-align: justify;
+    margin: 0px 25px;
+}
+blockquote{
+    text-align: justify;
+}
+
+@media screen and (max-width:568px) {
+    .front{
+        display: flex;
+        flex-direction: column;
+    }
+}

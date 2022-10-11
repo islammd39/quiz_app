@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 const Blog = () => {
     return (
         <Container>
-            <blockquote>
+            <blockquote className='my-4 mx-2'>
             <h5>What is the purpose of using react router ?</h5>
             <p>It allows the creation of single-page web or mobile apps that allows navigation without the page refreshing. React Router also gives us access to browser history features while maintaining the correct view of the application. React Router uses a component-based approach to routing.</p>
             <h5>what does context api work ?</h5>
