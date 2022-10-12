@@ -25,7 +25,8 @@ function App() {
         },
         element:<QuizTopics></QuizTopics>
        },
-      {path:'/static', element:<Static></Static>},
+      {path:'/static',
+      element:<Static></Static>},
       {path:'/blog', element:<Blog></Blog>}
     ]},
     {path:'*', element:<Error></Error>}

@@ -19,4 +19,8 @@
         top: 5px;
         right: 5px;
     }
+    .bar{
+        width: 100%;
+        height: auto;
+    }
 }
