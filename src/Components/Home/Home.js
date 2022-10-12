@@ -15,7 +15,7 @@ const Home = () => {
             <div className='py-2'>
             <h5>Let,s started: {data.length} practice on this topics</h5>
             </div>
-            <Row xs={1} md={2} lg={4} className="g-2">
+        <Row xs={1} md={2} lg={4} className="g-2">
             {
              data.map(quiz=> <QuizDetails key={quiz.id} quiz={quiz}></QuizDetails>)
             }

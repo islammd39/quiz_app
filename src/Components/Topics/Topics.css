@@ -1,0 +1,22 @@
+@media screen and (max-width:568px){
+    .option-section{
+        position: relative;
+    }
+    .option-section h5 {
+     font-size: 16px;
+     text-align: justify;
+     padding: 5px;
+     background-color: #c5f499;
+     width: 100%;
+    }
+    .btn-option{
+        width: 100%;
+        font-size: 14px;
+    }
+    .ic{
+        font-size: 14px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}

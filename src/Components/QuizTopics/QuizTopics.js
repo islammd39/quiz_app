@@ -11,11 +11,11 @@ const QuizTopics = () => {
         <div>
             <h4>Topic on quiz : {quizTopic.data.questions.length}</h4>
        <Container>
-       <Row className='m-5'>
+       <Row>
            { 
                 quizzes.map(quiz=> <Topics key={quiz.id} quiz={quiz}></Topics>)
             }
-           </Row>
+        </Row>
        </Container>
         </div>
     );
